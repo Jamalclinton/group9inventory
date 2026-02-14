@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inventory List</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a class="first" href="index.html">Home</a>
+            <a href="Inventory.html">Inventory List</a>
+            <a href="Inventory_Form_Page.html">Add Item</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Current Inventory List</h2>
+            <p>Below is the current stock available in the warehouse.</p>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Item ID</th>
+                        <th>Item Name</th>
+                        <th>Category</th>
+                        <th>Condition</th>
+                        <th>Quantity</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>Dell Inspiron 15</td>
+                        <td>Electronics</td>
+                        <td>New</td>
+                        <td>15</td>
+                        <td>In Stock</td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Office Chair (Ergonomic)</td>
+                        <td>Furniture</td>
+                        <td>Used</td>
+                        <td>5</td>
+                        <td>Low Stock</td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>Wireless Mouse</td>
+                        <td>Electronics</td>
+                        <td>New</td>
+                        <td>50</td>
+                        <td>In Stock</td>
+                    </tr>
+                    <tr>
+                        <td>004</td>
+                        <td>Wooden Desk</td>
+                        <td>Furniture</td>
+                        <td>Used</td>
+                        <td>2</td>
+                        <td>Critical</td>
+                    </tr>
+                    <tr>
+                        <td>005</td>
+                        <td>HDMI Cables (2m)</td>
+                        <td>Electronics</td>
+                        <td>New</td>
+                        <td>100</td>
+                        <td>In Stock</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br><br>
+
+            <h3>Inventory Summary</h3>
+            
+            <table class="layout-table">
+                <tr>
+                    <td>
+                        <h4>Electronics</h4>
+                        <p>Total Items: 165<br>
+                        Value: High<br>
+                        Restock Needed: No</p>
+                    </td>
+                    <td>
+                        <h4>Furniture</h4>
+                        <p>Total Items: 7<br>
+                        Value: Medium<br>
+                        Restock Needed: Yes</p>
+                    </td>
+                    <td>
+                        <h4>Quick Actions</h4>
+                        <a href="Inventory_Form_Page.html">Restock Now</a>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+    </main>
+
+    <footer> 
+        <p class="footer">&copy; 2026 INF 213D Group 9 Project </p>
+    </footer>
+
+</body>
+</html>

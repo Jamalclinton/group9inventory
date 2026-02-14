@@ -1,0 +1,174 @@
+/* External CSS to control formatting */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: aliceblue;
+}
+nav{
+    background-color: #333;
+    padding: 15px;
+}
+nav .first{
+    margin-left: 500px;
+}
+nav a{
+    margin-right: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+.home-cont{
+    padding: 200px;
+}
+
+.left h2{
+    font-size: 2rem;
+    color: blue;
+}
+.left p{
+    width: 550px;
+}
+
+.left a {
+    text-decoration: none;     
+    background-color: transparent; 
+    border: none;               
+    display: inline-block;     
+    margin-top: 10px;           
+    cursor: pointer;
+}
+
+.see-more-img {
+    width: 150px;
+    border: none;
+    transition: opacity 0.3s;
+    border-radius: 15px;
+}
+
+.see-more-img:hover {
+    opacity: 0.8
+}
+
+/* Requirement 4: Box model and positioning (Floating right with margins) */
+.right{
+    float: right;
+    margin-top: -200px;
+    
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    background: rgb(221, 235, 247);
+}
+
+.data-table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+/* Header Background */
+.data-table thead tr {
+    background-color: #333;
+    color: white;
+}
+
+/* Table with VISIBLE borders */
+.data-table th, .data-table td {
+    border: 1px solid #000;
+    padding: 12px;
+}
+
+/* Table with INVISIBLE borders */
+.layout-table{
+    width: 100%;
+    border: none;
+}
+
+.layout-table td {
+    width: 33%;
+    vertical-align: top;
+    border: none;/* Ensures borders remain invisible */
+}
+
+.rollover-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    transition: opacity 0.3s;
+}
+
+/* Requirement 4: Rollover Image effect (Visual change on hover) */
+.rollover-img:hover {
+    opacity: 0.7;
+    border: 5px solid blue;
+}
+.footer{
+    text-align: center;
+}
+
+.btn-return {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* --- Mobile Specific Styles (Applied only for screens smaller than 768px) --- */
+@media screen and (max-width: 768px) {
+    
+    /* 1. Fix the Navigation: Remove the 500px push and center links */
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    nav .first {
+        margin-left: 0; /* Overrides your desktop 500px margin */
+    }
+
+    nav a {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    /* 2. Fix the Home Page Layout: Stack text and image vertically */
+    .home-cont {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .left p {
+        width: 100%; /* Overrides the fixed 550px width */
+    }
+
+    .right {
+        float: none; /* Stops the image from floating off-screen */
+        margin-top: 20px; /* Removes the negative 200px margin */
+    }
+
+    /* 3. Fix the Tables: Allow them to be swipeable so they don't squash */
+    .data-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .container {
+        width: 95%; /* Make container wider on small screens */
+        padding: 10px;
+    }
+
+    /* 4. Fix images */
+    .rollover-img {
+        width: 150px; /* Slightly smaller for mobile */
+        height: auto;
+    }
+}
