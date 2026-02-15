@@ -125,7 +125,7 @@ nav a{
     /* 1. Fix the Navigation: Remove the 500px push and center links */
     nav {
         display: grid;
-        grid-template-coloums: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 
     nav .first {
@@ -171,3 +171,4 @@ nav a{
     }
 
 }
+
